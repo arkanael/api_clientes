@@ -1486,11 +1486,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luiz.guilherme\\Source\\Repos\\Projeto_ApiClientes\\Projeto.Application\\Projeto.Application.csproj",
+      "projectUniqueName": "C:\\Users\\luiz.guilherme\\source\\repos\\Projeto_ApiClientes\\Projeto.Application\\Projeto.Application.csproj",
       "projectName": "Projeto.Application",
-      "projectPath": "C:\\Users\\luiz.guilherme\\Source\\Repos\\Projeto_ApiClientes\\Projeto.Application\\Projeto.Application.csproj",
+      "projectPath": "C:\\Users\\luiz.guilherme\\source\\repos\\Projeto_ApiClientes\\Projeto.Application\\Projeto.Application.csproj",
       "packagesPath": "C:\\Users\\luiz.guilherme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luiz.guilherme\\Source\\Repos\\Projeto_ApiClientes\\Projeto.Application\\obj\\",
+      "outputPath": "C:\\Users\\luiz.guilherme\\source\\repos\\Projeto_ApiClientes\\Projeto.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1509,8 +1509,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\luiz.guilherme\\Source\\Repos\\Projeto_ApiClientes\\Projeto.Domain\\Projeto.Domain.csproj": {
-              "projectPath": "C:\\Users\\luiz.guilherme\\Source\\Repos\\Projeto_ApiClientes\\Projeto.Domain\\Projeto.Domain.csproj"
+            "C:\\Users\\luiz.guilherme\\source\\repos\\Projeto_ApiClientes\\Projeto.Domain\\Projeto.Domain.csproj": {
+              "projectPath": "C:\\Users\\luiz.guilherme\\source\\repos\\Projeto_ApiClientes\\Projeto.Domain\\Projeto.Domain.csproj"
             }
           }
         }
