@@ -36,7 +36,7 @@ namespace Projeto.Infra.Data.Repositories
             context.SaveChanges();
         }
 
-        public IEnumerable<TEntity> Find()
+        public virtual IEnumerable<TEntity> Find()
         {
             return context.Set<TEntity>().ToList();
         }
@@ -54,7 +54,7 @@ namespace Projeto.Infra.Data.Repositories
         public void Dispose()
         {
             context.Dispose();
-            GC.SuppressFinalize(this);
+            //GC.SuppressFinalize(this);
         }
     }
 }

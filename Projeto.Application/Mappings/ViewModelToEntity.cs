@@ -12,13 +12,16 @@ namespace Projeto.Application.Mappings
         public ViewModelToEntity()
         {
             CreateMap<ClienteCadastroViewModel, Cliente>()
-               .AfterMap((src, dest) => dest.IdCliente = Guid.NewGuid());
+               .AfterMap((src, dest) => dest.IdCliente = Guid.NewGuid())
+               .AfterMap((src, dest) => src.Endereco.IdCliente = dest.IdCliente);
+               
 
             CreateMap<ClienteEdicaoViewModel, Cliente>();
 
             CreateMap<ClienteConsultaViewModel, Cliente>();
 
-
+            CreateMap<EnderecoCadastroViewModel, Endereco>()
+               .AfterMap((src, dest) => dest.IdEndereco = Guid.NewGuid());
 
         }
     }

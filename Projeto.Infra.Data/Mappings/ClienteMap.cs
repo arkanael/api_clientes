@@ -12,16 +12,16 @@ namespace Projeto.Infra.Data.Mappings
         public void Configure(EntityTypeBuilder<Cliente> builder)
         {
             builder.ToTable("Cliente");
-            builder.HasKey(x => x.IdCliente);
+            builder.HasKey(x => new { x.IdCliente });
 
             builder.Property(x => x.Nome)
                 .HasColumnName("Nome")
-                .HasColumnType("varchar(175)")
+                .HasColumnType("varchar(70)")
                 .IsRequired();
 
             builder.Property(x => x.Cpf)
                .HasColumnName("Cpf")
-               .HasColumnType("varchar(11")
+                .HasColumnType("varchar(11)")
                .IsRequired();
 
             builder.Property(x => x.Idade)

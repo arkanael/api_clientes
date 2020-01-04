@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Projeto.Presentation.Api
+namespace Projeto.Presentation
 {
     public class Program
     {

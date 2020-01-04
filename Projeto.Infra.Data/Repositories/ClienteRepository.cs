@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using Projeto.Domain.Contracts.Repositories;
 using Projeto.Domain.Entities;
 using Projeto.Infra.Data.Context;
@@ -14,7 +15,13 @@ namespace Projeto.Infra.Data.Repositories
     {
         public ClienteRepository(DataContext context) : base(context)
         {
+            
+        }
 
+
+        public override IEnumerable<Cliente> Find()
+        {
+            return context.Clientes.Include(x => x.Enderecos).ToList();
         }
     }
 }

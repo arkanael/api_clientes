@@ -1,6 +1,5 @@
 ﻿using FluentAssertions;
 using Newtonsoft.Json;
-using Projeto.Application.Models;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

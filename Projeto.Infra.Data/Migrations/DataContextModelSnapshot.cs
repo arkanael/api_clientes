@@ -15,7 +15,7 @@ namespace Projeto.Infra.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
+                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -27,7 +27,7 @@ namespace Projeto.Infra.Data.Migrations
                     b.Property<string>("Cpf")
                         .IsRequired()
                         .HasColumnName("Cpf")
-                        .HasColumnType("varchar(11");
+                        .HasColumnType("varchar(11)");
 
                     b.Property<DateTime>("DataNascimento")
                         .HasColumnName("DataNascimento");
@@ -38,7 +38,7 @@ namespace Projeto.Infra.Data.Migrations
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnName("Nome")
-                        .HasColumnType("varchar(175)");
+                        .HasColumnType("varchar(70)");
 
                     b.HasKey("IdCliente");
 
@@ -53,9 +53,12 @@ namespace Projeto.Infra.Data.Migrations
                     b.Property<string>("Bairro")
                         .IsRequired()
                         .HasColumnName("Bairro")
-                        .HasColumnType("varchar(55)");
+                        .HasColumnType("varchar(75)");
 
-                    b.Property<string>("Cidade");
+                    b.Property<string>("Cidade")
+                        .IsRequired()
+                        .HasColumnName("Cidade")
+                        .HasColumnType("varchar(65)");
 
                     b.Property<string>("Estado")
                         .IsRequired()

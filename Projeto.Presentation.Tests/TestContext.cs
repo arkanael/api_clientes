@@ -10,16 +10,16 @@ namespace Projeto.Presentation.Tests
 {
     public class TestContext
     {
-        public HttpClient Client { get; set; }
+        //public HttpClient Client { get; set; }
 
-        private TestServer server;
+        //private TestServer server;
 
-        public TestContext()
-        {
-            server = new TestServer
-                (new WebHostBuilder().UseStartup<Presentation.Api.Startup>());
+        //public TestContext()
+        //{
+        //    server = new TestServer
+        //        (new WebHostBuilder().UseStartup<Presentation.Api.Startup>());
 
-            Client = server.CreateClient();
-        }
+        //    Client = server.CreateClient();
+        //}
     }
 }

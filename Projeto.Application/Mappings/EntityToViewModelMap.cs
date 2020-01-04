@@ -11,7 +11,16 @@ namespace Projeto.Application.Mappings
     {
         public EntityToViewModelMap()
         {
-            CreateMap<Cliente, ClienteConsultaViewModel>();
+            CreateMap<Cliente, ClienteConsultaViewModel>()
+            .AfterMap(((src, dest) => dest.Endereco = new EnderecoConsultaViewModel
+            {
+                Bairro = src.Enderecos
+            };
+ 
+    
+
+
+            CreateMap<Endereco, EnderecoConsultaViewModel>();
         }
     }
 }

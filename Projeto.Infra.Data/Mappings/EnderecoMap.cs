@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Projeto.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Projeto.Infra.Data.Mappings
 {
@@ -12,7 +9,7 @@ namespace Projeto.Infra.Data.Mappings
         public void Configure(EntityTypeBuilder<Endereco> builder)
         {
             builder.ToTable("Endereco");
-            builder.HasKey(x => x.IdEndereco);
+            builder.HasKey(x => new { x.IdEndereco });
 
             builder.Property(x => x.Logradouro)
                 .HasColumnName("Logradouro")
@@ -21,7 +18,12 @@ namespace Projeto.Infra.Data.Mappings
 
             builder.Property(x => x.Bairro)
                 .HasColumnName("Bairro")
-                .HasColumnType("varchar(55)")
+                .HasColumnType("varchar(75)")
+                .IsRequired();
+
+            builder.Property(x => x.Cidade)
+                .HasColumnName("Cidade")
+                .HasColumnType("varchar(65)")
                 .IsRequired();
 
             builder.Property(x => x.Estado)
